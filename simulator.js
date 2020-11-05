@@ -189,6 +189,7 @@ if (navigator.platform == "Win32"
 
         function updateFrame() {
             
+            requestAnimationFrame(updateFrame);
             if(!initialized)
             return;
             
@@ -201,7 +202,7 @@ if (navigator.platform == "Win32"
                 }
             firstFrame=false;
             }
-            requestAnimationFrame(updateFrame);
+            
             var end = new Date;
             time = end - initial;
             offset = time * 0.0001;
