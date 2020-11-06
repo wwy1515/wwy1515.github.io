@@ -1,16 +1,188 @@
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="normal.css" >
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <meta charset="utf-8">
         <title>Wenyou Wang</title>
-        <script src="png.js"></script>
+        <script src="js/png.js"></script>
     </head>
 <body>
-hello! I am Wenyou Wang.
-<div id='d1' style="position:absolute; top:0px; left:1100px; z-index:1">
+<div id='d1' style="position:absolute; top:0px; left:1200px; z-index:1">
     <canvas id="canvas-fluid" width="256" height="128"></canvas>
+    <br />
+    My Chinese name: 王文优↑, you can play with it. 
 </div>
-<script src="fluid.js"></script>
-<script src="render.js"></script>
-<script src="simulator.js"></script>
+<script src="js/fluid.js"></script>
+<script src="js/render.js"></script>
+<script src="js/simulator.js"></script>
+<table  id = "con" width="100%" border="0" align="center">
+    <tr>
+      <td width="15%"></td>
+      <td width="15%">
+          <div align="left">
+              <img id = "avatar" src="/media/wwy.jpg" height="400" >
+          </div>
+      </td>
+      <td width="2%"></td>
+      <td width="42%">
+          <div>
+          <h1 align="left">Wenyou Wang </h1>
+          </div>
+      
+      
+          <div class = "contact" align="left" >
+              edu email:u1266612@utah.edu
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div align="left">
+              I am a second-year master student at the University of Utah, currently working with Professor <a href="http://www.cemyuksel.com/" target="_blank">Cem Yuksel</a>.
+              I am interested in reproducing natural phenomena in a physically-based way. My philosophy is that nature is the best artist, so simulating nature is the best way of artistic creation. To be honest, I don't like mathmatical tools for their abstraction. But when they are used to represent natural phenomena, instead I feel they are attractive. 
+               <br />Hence, I'm now  focusing on physically-based simulation and physically-based rendering. It's hard to tell which one I prefer. Although both of them have their own unique principles, they have a lot common ideas for simulating the nature which I appresicate. For example, constitutive Models are just as beautiful as the rendering equation from my perspective. I believe I will continuely working on these two areas even if I choose one as my primary direction.
+               <br />In my spare time, I enjoy working out, playing console games(my favorite now: Star Wars Battlefront II), reading, post rock music.
+               <br />Last update: 2020/11/5
+        </div>
+      </td>
+      <td width="15%"></td>
+    </tr>
+  </table>
+
+
+  <table width="100%" border="0">
+  
+    <tr>
+    <td width="15%">
+    <td width="70%">
+    <div>
+        <hr>		    
+    <h2><a class = "two" name="pro">Education <i class="fas fa-graduation-cap"></i> </a></h2>          
+    <br>
+    <strong>MS in Computing, Graphics Track, Aug.2019 ~ Apr.2021(expected), University of Utah</strong><br><br>
+    <strong>B.Sc., Computer Science, Sep.2015 ~ June.2019, Zhejiang University of Technology</strong><br><br>
+    </div>
+    <td width="15%">
+    </tr>
+
+    <tr>
+    <td width="15%">
+    <td width="70%">
+    <div>   
+        <hr>		 
+    <h2><a class = "two" name="pro">Research <i class="fas fa-microscope"></i> </a></h2>              
+    <br>
+    <strong>Real-time globol illumination, Aug.2020 ~ present</strong><br><br>
+
+
+    </div>
+    <td width="15%">
+    </tr>
+
+    <tr>
+    <td width="15%">
+    <td width="70%">
+    <div>   
+        <hr>		 
+    <h2><a class = "two" name="pro">project <i class="fas fa-star"></i> </a></h2>              
+    <br>
+    <strong>Volumetric Path tracer</strong><br><br>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td width="93%" valign="top">
+                <div>
+                    <div align=middle><img src="/media/prj14Image1.png"  width="544" height="517"/></div>
+                    This is my final project for <a href="https://graphics.cs.utah.edu/courses/cs6620/fall2019/" target="_blank">CS6620(Ray Tracing - Graphics) </a>. <br/> <br/>
+                    There are some artifacts in the ceiling acutally caused by volumetric path tracing. 
+                    I didn't have enough time handling this bug then, since I only have one week to modify my path tracer into a volumetric path tracer. 
+                    I remember Prof. Yoksel wished us to spend more time on the scene building instead of advanced features, but I ingored the warning since rendering volumes was really funny (¬‿¬) . My references include <a href="http://www.pbr-book.org/3ed-2018/contents.html" target="_blank">Pbrt-v3</a> and <a href="https://graphics.pixar.com/library/ProductionVolumeRendering/paper.pdf" target="_blank">Production Volume Rendering</a>.
+                    <br/>
+                    <br/>
+                    Code will be released later. Original code is really badly structred and needs to be cleaned and reorganized. I plan to do it in this winter holiday.
+                </div>
+            </td>
+        </tr> 
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <strong>PCI-SPH simuator with particle fluid rendering in screen space</strong><br><br>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td width="93%" valign="top">
+                <div>
+                    &nbsp&nbsp&nbsp This is my final project for both CS6610(Interactive Comp Graph) and CS6660(Physics-based Animation). The particle fluid renderer is for CS6610 and the SPH fluid simulator is for CS6660.<br />
+                    <br />
+                    <div align=middle><video width="750" height="500" controls="controls">
+                        <source src="/media/FinalVideo.mp4" type="video/mp4" />
+                    <video>
+                    </div>
+                        <br/>
+                        <br/>
+                        Code will be released later. Original code is really badly structred and needs to be cleaned and reorganized. I plan to do it in this winter holiday.                    
+                </div>
+            </td>
+        </tr> 
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <strong>2D Flip simulator</strong><br><br>
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td width="93%" valign="top">
+                <div>
+                    &nbsp&nbsp&nbsp This is a very basic flip simulator for the purpose of learning.<br />
+                    <div align=middle><video width="750" height="500" controls="controls">
+                        <source src="/media/scene1.mp4" type="video/mp4" />
+                    <video>
+                    </div>
+                    <br />
+                    <br />
+                    Code on Github <a href="https://github.com/wwy1515/2D-Flip-simulator" target="_blank">2D-Flip-simulator</a>.
+                    To do list: 1.extend the simulator to 3D. 2.add vorticity confinement. 3.coupling dynamic rigid bodies.
+                </div>
+            </td>
+        </tr> 
+    </table>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <strong>cloth simulation and deformable objects(coming soon)</strong><br><br><br />
+    
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <tr>
+            <td width="93%" valign="top">
+                <div>
+                    &nbsp&nbsp&nbsp I am writing code about these topics recently for learning. More specifically, I am reading <a href="http://graphics.berkeley.edu/resources/ARCSim/index.html" target="_blank">ARCSim's code</a>
+                    and <a href="http://www.tkim.graphics/DYNAMIC_DEFORMABLES/DynamicDeformables.pdf" target="_blank">Dynamic Deformables: Implementation and Production Practicalities</a>. 
+                    The former is a very good project for starters learning cloth simulation, the latter is best course notes I've ever read.
+                    <br />
+                </div>
+            </td>
+        </tr> 
+    </table>
+    </div>
+    <td width="15%">
+    </tr>
+	
+    
+  
+    
+   
+    
+    
+    
+    
+    
+</table>
+
+
 </body>
 </html>
